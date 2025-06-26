@@ -1,3 +1,1 @@
-node_Modules
-.env
 To-Dos-adminSDK.json
