@@ -66,6 +66,7 @@ async function run() {
       const all = await tasksCollection.find().toArray();
       const currentUser = req.decoded.email;
       const userTasks = all.filter((t) => t.User === currentUser);
+      // console.log("Users: tasks: ", userTasks)
       res.send(userTasks);
     });
 
